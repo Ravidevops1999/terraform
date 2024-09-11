@@ -1,6 +1,6 @@
 variable "ami_id" {
     type        = string
-    default     = "ami_09c813fb71547fc4f"
+    default     = "ami-09c813fb71547fc4f"
     description = " This is the AMI ID of Devops"
 }
 
@@ -46,7 +46,7 @@ variable "protocol"{
     
 }
 
-variable "ingress_eidr"{
+variable "ingress_cidr"{
     type = list(string)
     default = ["0.0.0.0/0"]
 }
